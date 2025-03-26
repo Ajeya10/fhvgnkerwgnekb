@@ -6,3 +6,8 @@ helm repo add open-telemetry https://open-telemetry.github.io/opentelemetry-helm
 helm repo update
 
 ```
+# Deploy Each Component with Helm
+## Deploy Prometheus, AlertManager, and Grafana
+```bash
+helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
+```

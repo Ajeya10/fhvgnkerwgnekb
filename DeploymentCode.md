@@ -28,7 +28,11 @@ kubectl port-forward svc/prometheus-kube-alertmanager 9093:9093 -n monitoring  #
 
 ```
 
+Grafana Dashboard: http://localhost:3000 (Default login: admin / prom-operator)
 
+Prometheus UI: http://localhost:9090
+
+Alertmanager UI: http://localhost:9093
 
 
 

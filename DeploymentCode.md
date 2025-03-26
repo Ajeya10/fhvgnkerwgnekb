@@ -27,3 +27,17 @@ kubectl port-forward svc/prometheus-kube-prometheus 9090:9090 -n monitoring  # P
 kubectl port-forward svc/prometheus-kube-alertmanager 9093:9093 -n monitoring  # AlertManager
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

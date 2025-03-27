@@ -86,6 +86,6 @@ kubectl apply -f alerts/alertmanager-config.yaml -n monitoring
 - Fine-tune alert thresholds to prevent alert fatigue
 
 ---
-🎯 **Contributors:** _Your Name_
+🎯 **Contributors:** Ajeya Sharma
 
 🔗 **License:** MIT

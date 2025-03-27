@@ -75,3 +75,4 @@ static_configs:
   - targets: ['my-api-service.monitoring.svc.cluster.local:8000']
 
 ```
+

@@ -1,5 +1,41 @@
 # establishing connection between RESTAPI and Prometheus 
+# nsure your REST API has an endpoint that provides metrics in Prometheus format
+## If you're using Flask, install prometheus_flask_exporter:
+```sh
+pip install prometheus-flask-exporter
+```
+``` py
+from prometheus_flask_exporter import PrometheusMetrics
+from flask import Flask
 
+app = Flask(__name__)
+metrics = PrometheusMetrics(app)
+
+@app.route('/metrics')
+def metrics_endpoint():
+    return metrics.generate_latest()
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
+```
+## If using Node.js, use prom-client:
+``` js
+const express = require('express');
+const client = require('prom-client');
+
+const app = express();
+const register = new client.Registry();
+client.collectDefaultMetrics({ register });
+
+app.get('/metrics', async (req, res) => {
+    res.set('Content-Type', register.contentType);
+    res.end(await register.metrics());
+});
+
+app.listen(5000, () => console.log('Server running on port 5000'));
+
+```
 ##If your API is in Python (Flask/Django), use Prometheus client library:
 ```js
 from prometheus_client import start_http_server, Counter, Gauge

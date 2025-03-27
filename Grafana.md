@@ -41,11 +41,9 @@ Threshold: Warning at 3%, Critical at 5%
 
 ✅ API 99th Percentile Latency
 Query:
-
-promql
-Copy
-Edit
+``` promql
 api:latency_p99
+```
 Visualization: Line Chart
 
 Title: "API P99 Latency"
@@ -55,10 +53,9 @@ Threshold: Warning at 0.8s, Critical at 1s
 ✅ API CPU Usage
 Query:
 
-promql
-Copy
-Edit
+``` promql
 api:cpu_usage
+```
 Visualization: Line Chart
 
 Title: "API CPU Usage (%)"
@@ -67,11 +64,9 @@ Threshold: Warning at 70%, Critical at 85%
 
 ✅ API Memory Usage
 Query:
-
-promql
-Copy
-Edit
+``` promql
 api:memory_usage
+```
 Visualization: Gauge
 
 Title: "API Memory Usage (%)"
@@ -81,6 +76,3 @@ Threshold: Warning at 70%, Critical at 85%
 3️⃣ Save & Share the Dashboard
 Click Save Dashboard and give it a meaningful name like "API Observability Dashboard".
 
-Export the dashboard JSON for future use.
-
-****

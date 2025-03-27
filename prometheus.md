@@ -1,5 +1,7 @@
 # establishing connection between RESTAPI and Prometheus 
 # nsure your REST API has an endpoint that provides metrics in Prometheus format
+
+
 ## If you're using Flask, install prometheus_flask_exporter:
 ```sh
 pip install prometheus-flask-exporter
@@ -78,4 +80,19 @@ spec:
           annotations:
             summary: "High API latency detected"
             description: "95th percentile response time is above 500ms."
+```
+# Update Prometheus Scrape Config
+## Modify your Prometheus configuration file (prometheus.yml) to scrape the API metrics:
+``` yml
+scrape_configs:
+  - job_name: 'api-metrics'
+    metrics_path: '/metrics'  # API must expose metrics here
+    static_configs:
+      - targets: ['your-api-ip:8000']  # Replace with your API server IP & port
+```
+
+## If your API is inside Kubernetes, add the service name instead: Used my me 
+``` sh
+kubectl rollout restart deployment prometheus -n monitoring
+
 ```

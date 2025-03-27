@@ -1,4 +1,4 @@
-# Add Helm Repositories
+# Add Helm Repositories for promethus , fluent and open-telemetry 
 ```bash
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo add fluent https://fluent.github.io/helm-charts

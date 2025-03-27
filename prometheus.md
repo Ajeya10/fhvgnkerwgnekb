@@ -38,7 +38,7 @@ app.get('/metrics', async (req, res) => {
 app.listen(5000, () => console.log('Server running on port 5000'));
 
 ```
-##If your API is in Python (Flask/Django), use Prometheus client library:
+## If your API is in Python (Flask/Django), use Prometheus client library:
 ```js
 from prometheus_client import start_http_server, Counter, Gauge
 import random, time

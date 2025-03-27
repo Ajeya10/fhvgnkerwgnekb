@@ -24,6 +24,8 @@ helm install prometheus-stack prometheus-community/kube-prometheus-stack --names
 #### ✅Prometheus (for metrics collection)
 #### ✅ Grafana (for visualization)
 #### ✅ Alertmanager (for handling alerts)
+## 4. Access Grafana Dashboard (Port Forwarding):
 
-
-
+```sh
+kubectl port-forward svc/prometheus-stack-grafana 3000:80 -n monitoring
+```

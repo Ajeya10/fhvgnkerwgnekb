@@ -1,3 +1,6 @@
+# establishing connection between RESTAPI and Prometheus 
+
+##If your API is in Python (Flask/Django), use Prometheus client library:
 ```js
 from prometheus_client import start_http_server, Counter, Gauge
 import random, time

@@ -31,7 +31,7 @@ Grafana Dashboard: http://localhost:3000
 
 Prometheus UI: http://localhost:9090
 
-Alertmanager UI: http://localhost:9093
+Alertmanager UI: http://localhost:9093 
 
 
 

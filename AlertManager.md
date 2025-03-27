@@ -42,13 +42,22 @@ metadata:
   name: alertmanager
   namespace: monitoring
 spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alertmanager
   template:
+    metadata:
+      labels:
+        app: alertmanager
     spec:
       containers:
         - name: alertmanager
           image: prom/alertmanager
           args:
-            - "--config.file=/etc/alertmanager/alertmanager.yml"
+            - "--config.file=/etc/alertmanager/alertmanager.yml"  # Load config
+          ports:
+            - containerPort: 9093  # Default Alertmanager port
           volumeMounts:
             - name: config-volume
               mountPath: /etc/alertmanager
@@ -56,7 +65,8 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: alertmanager-config
+            name: alertmanager-config  # Mount the ConfigMap as a volume
+
 ```
 Apply the changes:
 ``` sh

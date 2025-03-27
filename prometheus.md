@@ -1,4 +1,4 @@
-
+```yaml
 apiVersion: monitoring.coreos.com/v1
 kind: PrometheusRule
 metadata:
@@ -16,3 +16,4 @@ spec:
           annotations:
             summary: "High API latency detected"
             description: "95th percentile response time is above 500ms."
+```

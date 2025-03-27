@@ -4,7 +4,10 @@
 
 ### Installed Prometheus, Grafana, and Alertmanager using Helm or manifests
 
+``` sh
+kubectl create namespace monitoring
 
+```
 
 
 

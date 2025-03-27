@@ -68,3 +68,8 @@ spec:
         summary: "High Memory Usage"
         description: "API container is using more than 85% of allocated memory."
 ```
+## Apply rule 
+``` sh
+kubectl apply -f prometheus-rules.yaml
+
+```

@@ -21,7 +21,7 @@ helm repo update
 helm install prometheus-stack prometheus-community/kube-prometheus-stack --namespace monitoring
 
 ```
-### ✅Prometheus (for metrics collection)
+#### ✅Prometheus (for metrics collection)
 ### ✅ Grafana (for visualization)
 ### ✅ Alertmanager (for handling alerts)
 

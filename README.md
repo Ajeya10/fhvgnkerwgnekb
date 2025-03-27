@@ -19,7 +19,7 @@ This repository contains the **Prometheus-Grafana-Alertmanager** stack deployed 
 
 ### **1️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/Ajeya10/Atlan-Observability.git
+git clone https://github.com/Ajeya10/AtlanObservability
 cd Atlan-Observability
 ```
 

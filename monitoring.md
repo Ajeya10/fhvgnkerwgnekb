@@ -22,8 +22,8 @@ helm install prometheus-stack prometheus-community/kube-prometheus-stack --names
 
 ```
 #### ✅Prometheus (for metrics collection)
-### ✅ Grafana (for visualization)
-### ✅ Alertmanager (for handling alerts)
+#### ✅ Grafana (for visualization)
+#### ✅ Alertmanager (for handling alerts)
 
 
 

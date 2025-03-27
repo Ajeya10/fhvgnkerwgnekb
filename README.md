@@ -52,7 +52,6 @@ kubectl port-forward svc/alertmanager 9093:9093 -n monitoring
 ## 🚀 Additional Resources
 - **Grafana Dashboards JSON files** available in `/dashboards/`
 - **Setup Guide** in `/docs/setup-guide.md`
-- **Video Walkthrough** (link to your recorded video)
 
 ---
 

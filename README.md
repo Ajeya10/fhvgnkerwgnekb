@@ -15,7 +15,7 @@ This repository contains the **Prometheus-Grafana-Alertmanager** stack deployed 
 - **Alerts via Email** using Alertmanager
 - **Automated Deployment with Kubernetes Manifests**
 
-## 🏗 Deployment Steps
+## Deployment Steps
 
 ### **1️⃣ Clone the Repository**
 ```sh

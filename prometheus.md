@@ -69,7 +69,7 @@ scrape_configs:
       - targets: ['your-api-ip:8000']  # Replace with your API server IP & port
 ```
 
-## If your API is inside Kubernetes, add the service name instead: Used my me 
+## If your API is inside Kubernetes, add the service name instead: Used by me 
 ``` sh
 static_configs:
   - targets: ['my-api-service.monitoring.svc.cluster.local:8000']

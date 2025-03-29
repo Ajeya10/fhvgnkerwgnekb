@@ -2,14 +2,14 @@
 
 # Atlan Observability Challenge 2025 - Monitoring Stack 🚀
 
-##📌 Repository Description:
+##  Repository Description:
 "This repository contains a Kubernetes-based observability stack using Prometheus, Grafana, and Alertmanager to monitor REST API performance. It includes automated deployment scripts, pre-configured dashboards, and alerting mechanisms to detect API issues in real-time. 🚀"
 
 Let me know if you’d like any refinements! 🚀
 
 This repository contains the **Prometheus-Grafana-Alertmanager** stack deployed in a Kubernetes **monitoring namespace** to collect API metrics, visualize performance, and trigger alerts. 
 
-## 📌 Features
+##  Features
 - **API Monitoring** using Prometheus
 - **Visual Dashboards** in Grafana
 - **Alerts via Email** using Alertmanager
@@ -49,10 +49,10 @@ kubectl port-forward svc/alertmanager 9093:9093 -n monitoring
 
 ---
 
-## 🚀 Additional Resources
+##  Additional Resources
 - **Grafana Dashboards JSON files** available in `Grafana`
 
 ---
 
-## **📢 Final Notes**
+## ** Final Notes**
 This repo contains all necessary configurations to deploy **Prometheus, Grafana, and Alertmanager** to monitor REST API performance. 🎯
